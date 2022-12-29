@@ -20,7 +20,35 @@
     </header>
     <section>
         <h2 id="text"><span>dora dora dooora l'exploratriiiiice</span><br>DOOORAAA</h2>
+        <img src="img/forest.png" id="forest">
         <a href="#" id="btn">CARTE</a>
+        <img src="img/rocks1.png" id="rocks">
+        <img src="img/water.png" id="water">
     </section>
+    <div class="sec">
+        <h2>Parallax scrolling effects</h2>
+        <p>By spite about do of do allow blush. Additions in conveying or collected objection in. Suffer few desire wonder her object hardly nearer.<br> Abroad no chatty others my silent an. Fat way appear denote who wholly narrow gay settle. Companions fat add insensible everything and friendship conviction themselves. <br> Theirs months ten had add narrow own. Contented get distrusts certainty nay are frankness concealed ham. <br> On unaffected resolution on considered of. No thought me husband or colonel forming effects. <br> End sitting shewing who saw besides son musical adapted. Contrasted interested eat alteration pianoforte sympathize was. He families believed if no elegance interest surprise an. <br> It abode wrong miles an so delay plate. She relation own put outlived may disposed. Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient engrossed concealed and her. <br> Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities the. As hastened oh produced prospect formerly up am. <br> Placing forming nay looking old married few has. Margaret disposed add screened rendered six say his striking confined. <br>
+        </p>
+
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let forest = document.getElementById('forest');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function()
+        {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value *-0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
 </body>
 </html>
